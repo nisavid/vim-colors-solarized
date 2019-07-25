@@ -242,7 +242,7 @@ let colors_name = "solarized"
 " neutral gray monotone palette component)
 if ((has("gui_running") || &termguicolors) && g:solarized_degrade == 0)
     let s:vmode       = "gui"
-    let s:base03      = "#586e75"
+    let s:base03      = "#002b36"
     let s:base02      = "#073642"
     let s:base01      = "#586e75"
     let s:base00      = "#657b83"
@@ -655,7 +655,7 @@ exe "hi! DiffDelete"     .s:fmt_none   .s:fg_red    .s:bg_base02
 exe "hi! DiffText"       .s:fmt_none   .s:fg_blue   .s:bg_base02 .s:sp_blue
     endif
 endif
-exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0
+exe "hi! link SignColumn LineNr"
 exe "hi! Conceal"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_red
 exe "hi! SpellCap"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_violet
